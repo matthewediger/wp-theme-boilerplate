@@ -1,0 +1,3 @@
+tr:has([data-depends-on].hidden) {
+  display: none;
+}

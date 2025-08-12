@@ -1,0 +1,29 @@
+{
+  "name": "theme-slug",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A WordPress theme based on the Twenty Twenty-Five theme, customized for Home Spec of Colorado.",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "mkdir -p src/css && touch src/css/generated-tailwind-safelist.txt",
+    "build": "npm run prebuild && vite build",
+    "watch": "npm run prebuild && vite build --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-mediaworks:mediaworksinc/homespecofcolorado-wp-theme-theme-slug"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "twentytwentyfive"
+  ],
+  "author": "Matthew Ediger <matt@mediaworksweb.com> (https://mediaworksweb.com)",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.5",
+    "@types/node": "^22.15.17",
+    "tailwindcss": "^4.1.5",
+    "vite": "^6.3.5"
+  }
+}

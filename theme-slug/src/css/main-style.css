@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@source inline('./generated-tailwind-safelist.txt');
+
+/* List other style @imports here */
+
+@layer base {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--wp--preset--color--contrast);
+  }
+
+  ul:not([class*="menu"]) {
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+}
+
+@layer components {
+  figure.size-full {
+    @apply !w-auto !h-auto;
+  }
+}
+
+@layer utilities {
+}

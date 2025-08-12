@@ -1,0 +1,26 @@
+{
+  "name": "mediaworks/theme-slug",
+  "description": "A WordPress theme for Home Spec of Colorado.",
+  "type": "wordpress-theme",
+  "authors": [
+    {
+      "name": "mediaworksmatt",
+      "email": "matt@mediaworksweb.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "wordpress/wordpress": "^5.8"
+  },
+  "require-dev": {
+    "php-stubs/wordpress-stubs": "^6.8",
+    "php-stubs/wordpress-globals": "^0.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ThemeNamespace\\Inc\\": "inc/",
+      "ThemeNamespace\\Inc\\Admin\\": "inc/Admin/",
+      "ThemeNamespace\\Inc\\Base\\": "inc/Base/"
+    }
+  }
+}
